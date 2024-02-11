@@ -1,0 +1,146 @@
+:root {
+    --white: #eee9e1;
+    --green: #93ad83;
+    --brown: #ad9b83;
+    --gray: #323232;
+    --brown-gradient: radial-gradient(50% 50%, circle closest-side, rgb(173, 155, 131) 0%, rgb(138, 124, 104) 100%);
+}
+
+body {
+    background-color: var(--white);
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Replace image fluid class */
+img {
+    max-width: 100% !important;
+}
+
+/* FONTS */
+@font-face {
+    font-family: notepad;
+    src: url(../fonts/Notepad.otf);
+}
+
+p {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+p.event-description {
+    font-size: 1.25rem;
+    letter-spacing: normal;
+    margin-bottom: 2rem;
+}
+
+.contact-info h4 {
+    font-size: 2.25rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.contact-info p {
+    font-weight: 300;
+    font-size: 1.75rem;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+h1 {
+    
+    font-weight: 700;
+    color: var(--white);
+    text-shadow: 5px -10px 30px var(--gray);
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: "notepad", sans-serif;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 8rem;
+}
+
+h2::after {
+    content: "";
+    box-shadow: 2px 2px 6px 2px var(--green);
+    background-color: var(--green);
+    opacity: 15%;
+    border-radius: 50%;
+    height: 5px;
+    width: 20rem;
+    display: flex;
+    margin: -40px auto;
+}
+
+h3 {
+    font-family: "notepad", sans-serif;
+    font-weight: 700;
+    color: var(--brown);
+    font-size: 8rem;
+}
+
+h3:after {
+    content: "";
+    box-shadow: 2px 2px 6px 2px var(--brown);
+    background-color: var(--brown);
+    opacity: 15%;
+    border-radius: 50%;
+    height: 5px;
+    width: 20rem;
+    display: flex;
+    margin: -40px auto;
+}
+
+.row {
+    min-height: 10rem;
+}
+
+.parallax {
+
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.splash-bg {
+    background-image: url("../img/splash-img.png");
+}
+
+.event-bg {
+    min-height: 600px;
+    background-image: url("../img/brown-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.header {
+    max-height: 12rem;
+}
+
+/* Navbar styles */
+.nav {
+    background-color: var(--green);
+    width: 75vw;
+    height: 75px;
+    border-radius: 75px;
+}
+
+.sticky-top {
+    top: 1rem;
+}
+
+.nav-link {
+    
+    font-weight: 400;
+    color: var(--white);
+    font-size: 2.5rem;
+}
