@@ -12,11 +12,6 @@ body {
     font-family: "Josefin Sans", sans-serif;
 }
 
-/* Replace image fluid class */
-img {
-    max-width: 100% !important;
-}
-
 /* FONTS */
 @font-face {
     font-family: notepad;
@@ -122,9 +117,6 @@ h3:after {
     background-position: top;
 }
 
-.header {
-    max-height: 12rem;
-}
 
 /* Navbar styles */
 .nav {
